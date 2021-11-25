@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <label>Your Name:</label>
+      <input type="text" name="name"><br>
+      <label>Your Email:</label>
+      <input type="text" name="email"><br>
+      <label>Your Message:</label><br>
+      <textarea name="messagebox" rows="8" cols="50"></textarea><br>
+      <input type="submit" name="submit" value="submit"><br>
+
+      <hr>
+      <label for="guest-number">人数</label>
+      <select id="guest-number">
+        <optgroup label="请选择人数">
+          <option>1位</option>
+          <option>2位</option>
+          <option>3位</option>
+          <option>4位</option>
+        </optgroup>
+      </select>
+
+      <hr>
+      <label for="dish">请选择菜品</label>
+      <select id="dish" multiple>
+        <!--
+          下拉菜单dropdown:select box & autocomplete box;
+          select之后，optgroup之前的位置，可以用option设定想要显示的文字;
+          selected属性用来设定默认显示的选项;
+          size="4"；
+          disabled属性‘不可选：
+        -->
+        <option value="">--请选择菜品--</option>
+        <optgroup label="蔬菜类">
+          <option>土豆片</option>
+          <option disabled>蘑菇拼盘</option>
+          <option>海带结</option>
+          <option>花菜</option>
+        </optgroup>
+        <optgroup label="肉类">
+          <option>肥羊</option>
+          <option>肥牛</option>
+          <option>牛百叶</option>
+          <option>牛肉丸子</option>
+        </optgroup>
+        <optgroup label="海鲜类">
+          <option>巴沙鱼柳</option>
+          <option>鱼丸</option>
+          <option>虾滑</option>
+        </optgroup>
+      </select><br><br>
+
+      <hr>
+      <input type="file"><br><br>
+      <input type="date" name="" value=""><br><br>
+      <input type="range" name="" value="">
+
+    </form>
+  </body>
+</html>
